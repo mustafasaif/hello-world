@@ -17,13 +17,13 @@ with open("network_analysis_data.txt", "r") as file:
     count=0
     for line in file:
         count+= 1
-        if count%2== 0:
+         count%2== 0:
             line1=line.split()[8]
             m_path_2.append(convert(line1))
         else:
             line2=line.split()[8]
             m_path_1.append(convert(line2))
-plt.figure(1)
+plt.fiure(1)
 plt.xlabel('Data Row')
 plt.ylabel('Data Rate[Mb/s]')
 plt.plot(m_path_1,'blue', label='Path 1')
