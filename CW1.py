@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 m_path_1=[]
 m_path_2=[]
 
-def convert(val):
+def convert(val)
     if val.endswith('Kb'):
         return float(val[:-2])/1000
     elif val.endswith('Mb'):
@@ -17,7 +17,7 @@ with open("network_analysis_data.txt", "r") as file:
     count=0
     for line in file:
         count+= 1
-         count%2== 0:
+         count%2= 0:
             line1=line.split()[8]
             m_path_2.append(convert(line1))
         else:
